@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .delete-container {
+        margin-top: 25vh;
+    }
+</style>
+
+<div class="container delete-container">
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Bienvenido al Catálogo de Usuarios</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Catálogo de Usuarios</h5>
+                        <p class="card-text">Administra los usuarios registrados en el sistema.</p>
+                        @Html.ActionLink("Ver Usuarios", "IndexUsuario", "Usuarios", new { area = "" }, new { @class = "btn btn-outline-primary" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Roles</h5>
+                        <p class="card-text">Administra los roles disponibles en el sistema.</p>
+                        @Html.ActionLink("Ver Roles", "IndexRoles", "Roles", new { area = "" }, new { @class = "btn btn-outline-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
